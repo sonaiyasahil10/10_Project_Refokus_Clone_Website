@@ -1,6 +1,11 @@
-import React, { useState } from 'react'
-import Product from './Product'
+import React, { useState } from 'react';
+import Product from './Product';
 import { motion } from 'framer-motion';
+import arqitel from "/src/assets/arqitel.mp4";
+import ttr from "/src/assets/ttr.mp4";
+import yir from "/src/assets/yir.mp4";
+import yahoo from "/src/assets/yahoo.mp4";
+import rainfall from "/src/assets/rainfall.mp4";
 
 function Products() {
     var products = [
@@ -54,11 +59,11 @@ function Products() {
             {products.map((elem, index) => <Product key={index} val={elem} mover={mover} count={index} />)}
             <div className='h-full w-full absolute top-0 pointer-events-none'>
                 <motion.div initial={{ y: pos, x: "-50%" }} animate={{ y: pos + 'rem' }} transisition={{ ease: [0.76, 0, 0.24, 1], duration: 0.6 }} className='window absolute w-[26rem] h-[18rem] bg-zinc-800 left-[45%] rounded-3xl overflow-hidden' >
-                    <motion.div animate={{ y: - ipos + 'rem' }} transisition={{ease:[0.76, 0, 0.24, 1],duration:0.3}} className='scene w-full h-full'><video className="w-full h-full absolute object-cover" muted loop autoPlay src="src/assets/arqitel.mp4"></video></motion.div>
-                    <motion.div animate={{ y: - ipos + 'rem' }} transisition={{ease:[0.76, 0, 0.24, 1],duration:0.3}} className='scene w-full h-full'><video className="w-full h-full absolute object-cover" muted loop autoPlay src="src/assets/ttr.mp4"></video></motion.div>
-                    <motion.div animate={{ y: - ipos + 'rem' }} transisition={{ease:[0.76, 0, 0.24, 1],duration:0.3}} className='scene w-full h-full'><video className="w-full h-full absolute object-cover" muted loop autoPlay src="src/assets/yir.mp4"></video></motion.div>
-                    <motion.div animate={{ y: - ipos + 'rem' }} transisition={{ease:[0.76, 0, 0.24, 1],duration:0.3}} className='scene w-full h-full'><video className="w-full h-full absolute object-cover" muted loop autoPlay src="src/assets/yahoo.mp4"></video></motion.div>
-                    <motion.div animate={{ y: - ipos + 'rem' }} transisition={{ease:[0.76, 0, 0.24, 1],duration:0.3}} className='scene w-full h-full'><video className="w-full h-full absolute object-cover" muted loop autoPlay src="src/assets/rainfall.mp4"></video></motion.div>
+                    <motion.div animate={{ y: - ipos + 'rem' }} transisition={{ease:[0.76, 0, 0.24, 1],duration:0.3}} className='scene w-full h-full'><video className="w-full h-full absolute object-cover" muted loop autoPlay src={arqitel}></video></motion.div>
+                    <motion.div animate={{ y: - ipos + 'rem' }} transisition={{ease:[0.76, 0, 0.24, 1],duration:0.3}} className='scene w-full h-full'><video className="w-full h-full absolute object-cover" muted loop autoPlay src={ttr}></video></motion.div>
+                    <motion.div animate={{ y: - ipos + 'rem' }} transisition={{ease:[0.76, 0, 0.24, 1],duration:0.3}} className='scene w-full h-full'><video className="w-full h-full absolute object-cover" muted loop autoPlay src={yir}></video></motion.div>
+                    <motion.div animate={{ y: - ipos + 'rem' }} transisition={{ease:[0.76, 0, 0.24, 1],duration:0.3}} className='scene w-full h-full'><video className="w-full h-full absolute object-cover" muted loop autoPlay src={yahoo}></video></motion.div>
+                    <motion.div animate={{ y: - ipos + 'rem' }} transisition={{ease:[0.76, 0, 0.24, 1],duration:0.3}} className='scene w-full h-full'><video className="w-full h-full absolute object-cover" muted loop autoPlay src={rainfall}></video></motion.div>
                 </motion.div>
             </div>
         </div>
