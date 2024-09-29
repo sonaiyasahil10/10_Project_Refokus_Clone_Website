@@ -54,18 +54,11 @@ function Products() {
             {products.map((elem, index) => <Product key={index} val={elem} mover={mover} count={index} />)}
             <div className='h-full w-full absolute top-0 pointer-events-none'>
                 <motion.div initial={{ y: pos, x: "-50%" }} animate={{ y: pos + 'rem' }} transisition={{ ease: [0.76, 0, 0.24, 1], duration: 0.6 }} className='window absolute w-[26rem] h-[18rem] bg-zinc-800 left-[45%] rounded-3xl overflow-hidden' >
-                    <motion.div animate={{ y: - ipos + 'rem' }} transisition={{ease:[0.76, 0, 0.24, 1],duration:0.3}} className='scene w-full h-full'><video className="w-full h-full absolute object-cover" muted loop autoPlay src="src\assets\arqitel.mp4"></video></motion.div>
-                    <motion.div animate={{ y: - ipos + 'rem' }} transisition={{ease:[0.76, 0, 0.24, 1],duration:0.3}} className='scene w-full h-full'><video className="w-full h-full absolute object-cover" muted loop autoPlay src="src\assets\ttr.mp4"></video></motion.div>
-                    <motion.div animate={{ y: - ipos + 'rem' }} transisition={{ease:[0.76, 0, 0.24, 1],duration:0.3}} className='scene w-full h-full'><video className="w-full h-full absolute object-cover" muted loop autoPlay src="src\assets\yir.mp4"></video></motion.div>
-                    <motion.div animate={{ y: - ipos + 'rem' }} transisition={{ease:[0.76, 0, 0.24, 1],duration:0.3}} className='scene w-full h-full'><video className="w-full h-full absolute object-cover" muted loop autoPlay src="src\assets\yahoo.mp4"></video></motion.div>
-                    <motion.div animate={{ y: - ipos + 'rem' }} transisition={{ease:[0.76, 0, 0.24, 1],duration:0.3}} className='scene w-full h-full'><video className="w-full h-full absolute object-cover" muted loop autoPlay src="src\assets\rainfall.mp4"></video></motion.div>
-
-                    {/* <motion.div animate={{ y: - ipos + 'rem' }} transisition={{ ease: [0.76, 0, 0.24, 1], duration: 0.3 }} className='scene w-full h-full bg-red-100'></motion.div>
-                    <motion.div animate={{ y: - ipos + 'rem' }} transisition={{ ease: [0.76, 0, 0.24, 1], duration: 0.3 }} className='scene w-full h-full bg-red-200'></motion.div>
-                    <motion.div animate={{ y: - ipos + 'rem' }} transisition={{ ease: [0.76, 0, 0.24, 1], duration: 0.3 }} className='scene w-full h-full bg-red-300'></motion.div>
-                    <motion.div animate={{ y: - ipos + 'rem' }} transisition={{ ease: [0.76, 0, 0.24, 1], duration: 0.3 }} className='scene w-full h-full bg-red-400'></motion.div>
-                    <motion.div animate={{ y: - ipos + 'rem' }} transisition={{ ease: [0.76, 0, 0.24, 1], duration: 0.3 }} className='scene w-full h-full bg-red-500'></motion.div> */}
-
+                    <motion.div animate={{ y: - ipos + 'rem' }} transisition={{ease:[0.76, 0, 0.24, 1],duration:0.3}} className='scene w-full h-full'><video className="w-full h-full absolute object-cover" muted loop autoPlay src="src/assets/arqitel.mp4"></video></motion.div>
+                    <motion.div animate={{ y: - ipos + 'rem' }} transisition={{ease:[0.76, 0, 0.24, 1],duration:0.3}} className='scene w-full h-full'><video className="w-full h-full absolute object-cover" muted loop autoPlay src="src/assets/ttr.mp4"></video></motion.div>
+                    <motion.div animate={{ y: - ipos + 'rem' }} transisition={{ease:[0.76, 0, 0.24, 1],duration:0.3}} className='scene w-full h-full'><video className="w-full h-full absolute object-cover" muted loop autoPlay src="src/assets/yir.mp4"></video></motion.div>
+                    <motion.div animate={{ y: - ipos + 'rem' }} transisition={{ease:[0.76, 0, 0.24, 1],duration:0.3}} className='scene w-full h-full'><video className="w-full h-full absolute object-cover" muted loop autoPlay src="src/assets/yahoo.mp4"></video></motion.div>
+                    <motion.div animate={{ y: - ipos + 'rem' }} transisition={{ease:[0.76, 0, 0.24, 1],duration:0.3}} className='scene w-full h-full'><video className="w-full h-full absolute object-cover" muted loop autoPlay src="src/assets/rainfall.mp4"></video></motion.div>
                 </motion.div>
             </div>
         </div>
